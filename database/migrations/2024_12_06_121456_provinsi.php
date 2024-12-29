@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nama',45);
             $table->string('alt_nama',45);
-            $table->double('latitude');
-            $table->double('longitude');
+            $table->decimal('latitude',10,8);
+            $table->decimal('longitude',11,8);
             $table->timestamps();
         });
     }
